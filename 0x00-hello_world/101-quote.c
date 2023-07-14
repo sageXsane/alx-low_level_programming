@@ -3,7 +3,6 @@
 
 /**
  * main - displays output to standard error
- * @message: contains output
  *
  * Description: contains unistd header which provides write function
  * which allows for output to be displayed in stderr

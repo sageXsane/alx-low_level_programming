@@ -16,24 +16,21 @@ int main(void)
 
 	for (i = 0; i < 100; i++)
 	{
-		for (j = i; j < 100; j++)
+		for (j = i + 1; j < 100; j++)
 		{
 			a = (i / 10) + 48;
 			b = (i % 10) + 48;
 			c = (j / 10) + 48;
 			d = (j % 10) + 48;
-			if (((a + b) < (c + d)) || ((a != d) && (b != c)))
+			putchar(a);
+			putchar(b);
+			putchar(' ');
+			putchar(c);
+			putchar(d);
+			if ((d != '9') || (c != '9') || (b != '8') || (a != '9'))
 			{
-				putchar(a);
-				putchar(b);
+				putchar(',');
 				putchar(' ');
-				putchar(c);
-				putchar(d);
-				if ((d != '9') || (c != '9') || (b != '8') || (a != '9'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
 			}
 		}
 	}

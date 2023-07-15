@@ -8,9 +8,9 @@ task 5: program that prints all single digit numbers of base 10 starting from 0
 task 6: program that prints all single digit numbers of base 10 starting from 0, without using char variables
 task 7: prints the lowercase alphabet in reverse
 task 8: prints all the numbers of base 16 in lowercase
-task 5: prints all possible combinations of single-digit numbers separated by comma and space
+task 9: prints all possible combinations of single-digit numbers separated by comma and space
 
 As well as three advance tasks:
-task 10
-task 11 
-task 12
+task 10: print all different ccombos of two-digit numbers separated by comma and space
+task 11: prints all possible different combinations of three digits
+task 12: prints all possible combinations of two two-digit numbers

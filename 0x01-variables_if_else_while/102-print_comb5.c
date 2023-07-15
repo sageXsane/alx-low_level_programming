@@ -22,7 +22,7 @@ int main(void)
 			b = (i % 10) + 48;
 			c = (j / 10) + 48;
 			d = (j % 10) + 48;
-			if ((a + b) < (c + d))
+			if (((a + b) < (c + d)) && ((a != d) && (b != c)))
 			{
 				putchar(a);
 				putchar(b);

@@ -18,14 +18,3 @@ void print_alphabet_x10(void)
 		_putchar('\n');
 	}
 }
-
-/**
- * main - calls print_alphabet to display a-z followed by a newline
- *
- * Return: returns 0 if successfull
- */
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}

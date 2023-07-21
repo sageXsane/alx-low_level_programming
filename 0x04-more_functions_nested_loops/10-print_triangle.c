@@ -14,7 +14,7 @@ void print_triangle(int size)
 	int space = 0;
 	int hash = n;
 
-	for (i = 0; i < size; i--)
+	for (i = 0; i < size; i++)
 	{
 		if (size <= 0)
 		{

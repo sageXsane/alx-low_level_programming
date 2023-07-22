@@ -10,3 +10,7 @@ task 7: draw a diagonal that is n long
 task 8: print square of n size
 task 9: print number 1-100 but write fizz if num div 3 and buzz if div 5
 task 10: prints a triangle of a certain size made with hashes
+
+As well as two advanced tasks:
+task 11: display the largest prime number of 612852475143
+task 12: print numbers using_putchar keeping minding of int overflow(casting)

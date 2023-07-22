@@ -1,5 +1,7 @@
 #include "main.h"
 #include <unistd.h>
+#include <limits.h>
+#include <stdio.h>
 
 /**
  * print_number - prints number with consideration for negative values
@@ -7,15 +9,18 @@
  */
 void print_number(int n)
 {
-	int sign = 0;
+	unsigned int a;
 
-	if ((n < 0) && (sign == 0))
+	if (n < 0)
 	{
 		_putchar(45);
-		sign++;
-		n = n * -1;
+		a = -n;
 	}
-	if (n > 9)
-		print_number(n / 10);
-	_putchar((n % 10) + '0');
+	else
+	{
+		a = n;
+	}
+	if (a > 9)
+		print_number(a / 10);
+	_putchar((a % 10) + '0');
 }

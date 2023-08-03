@@ -8,6 +8,5 @@ task 5: return the square root of a number
 task 6: return whether a number is a prime number
 
 as well as two advanced tasks:
-task 100
-task 101:
-(not completed)
+task 100: check whether a string is a palindrome
+task 101: compare string with the inclusion of wildcards (not completed)

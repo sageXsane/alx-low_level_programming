@@ -15,16 +15,20 @@ bool isInt(char *s_num);
 int main(int argc, char *argv[])
 {
 	int mul;
-	int num1 = atoi(argv[1]);
-	int num2 = atoi(argv[2]);
+	int num1;
+	int num2;
 
-	if ((argc == 1) || (isInt(argv[1]) == false) || (isInt(argv[2]) == false))
+	if ((argc == 1) || (isInt(argv[1]) == false) ||
+(isInt(argv[2]) == false) ||
+(argv[1] == NULL) || (argv[2] == NULL))
 	{
 		printf("Error\n");
 		return (1);
 	}
 	else
 	{
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
 		mul = num1 * num2;
 		printf("%d\n", mul);
 	}

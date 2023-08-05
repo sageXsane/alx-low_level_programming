@@ -4,3 +4,6 @@ task 1: prints the number of arguments on the command line save argv[0]
 task 2: prints all the arguments on the command line
 task 3: multiples 2 numbers that are give as arguments on command line
 task 4: prints sum of positive numbers on command line
+
+advance task
+task 100: prints the minimum number of coins to make change for an amount of money.

@@ -11,10 +11,12 @@ char *_strdup(char *str)
 	char *arr = malloc(strlen(str) * sizeof(char));
 	unsigned int i;
 
-	if ((arr == NULL) || (strlen(str) == 0))
+	if (arr == NULL)
 		return (NULL);
-
-	for (i = 0; i <= strlen(str); i++)
+	if (str == NULL)
+		return (NULL);
+	for (i = 0; i < strlen(str); i++)
 		arr[i] = str[i];
+	arr[strlen(str)] = '\0';
 	return (arr);
 }

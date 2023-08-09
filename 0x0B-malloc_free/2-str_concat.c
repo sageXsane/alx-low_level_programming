@@ -18,15 +18,15 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 	size = (strlen(s1) + strlen(s2)) * sizeof(char);
-	 arr = malloc(size);
+	arr = malloc(size);
 	if ((size == 0) || (arr == NULL))
 		return (NULL);
 	if (arr == NULL)
 		return (NULL);
 	for (i = 0; i < strlen(s1); i++)
 		arr[i] = s1[i];
-	for (j = 0; j <= strlen(s2); j++)
+	for (j = 0; j < strlen(s2); j++)
 		arr[strlen(s1) + j] = s2[j];
+	arr[strlen(s1) + strlen(s2) - 1] = '\0';;
 	return (arr);
-
 }

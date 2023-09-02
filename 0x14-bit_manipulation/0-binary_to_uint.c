@@ -17,7 +17,7 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	while (b[size] != '\0')
 		size++;
-	if (size >= (sizeof(unsigned int) * 8))
+	if (size >= ((int)(sizeof(unsigned int) * 8)))
 		return (0);
 	for (i = 0; i < size; i++)
 	{

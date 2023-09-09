@@ -23,18 +23,29 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd < 0)
 	{
 		free(str);
+		close(fd);
+		return (0);
+	}
+	if (letters == 0)
+	{
+		free(str);
+		close(fd);
 		return (0);
 	}
 	count = read(fd, str, letters);
-	if (count <= 0)
+	if ((count <= 0))
 	{
 		free(str);
+		close(fd);
 		return (0);
 	}
 	count_rd = write(STDOUT_FILENO, str, count);
 	free(str);
 	close(fd);
 	if (count_rd < 0)
+	{
+		close(fd);
 		return (0);
+	}
 	return (count_rd);
 }

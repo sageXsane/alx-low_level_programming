@@ -57,7 +57,7 @@ void file_error(char *filename, int location)
 	if (location == 0)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 	else
-		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", filename);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 	exit(98 + location);
 }
 

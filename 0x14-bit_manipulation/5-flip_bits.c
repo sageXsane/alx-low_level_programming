@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * flip_bits - determines how may bits it would take to make n into m
+ * @n: first number
+ * @m: second number
+ *
+ * Return: returns the number of bites to be flipped
+ */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	int size = sizeof(unsigned long int) * 8;

@@ -23,7 +23,6 @@ int create_file(const char *filename, char *text_content)
 	{
 		while (text_content[size] != '\0')
 			size++;
-		size++;
 		wr_bytes = write(fd, text_content, size);
 		if ((wr_bytes < 0) || (wr_bytes < size))
 		{

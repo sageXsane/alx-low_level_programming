@@ -2,5 +2,9 @@ CC := gcc
 
 SRC := school.c main.c
 
-all:
-	${CC} ${SRC} -o school
+EXCEUTABLE := school
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): $(SRC)
+	${CC} $^ -o $@
